@@ -4,4 +4,6 @@ This repo is focused on teaching ReactJS.
 
 To get started, run these shell commands:
 
-echo hello world
+cd ~ann
+git clone https://github.com/danbikle/app27.git
+
