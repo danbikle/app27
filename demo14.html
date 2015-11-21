@@ -19,6 +19,17 @@
     <div id="content"></div>
     <hr />
     <script type="text/babel">
+
+var CommentList = React.createClass({
+  render: function() {
+    return (
+      <div className="commentList">
+        Hello, world! I am a CommentList.
+      </div>
+    );
+  }
+});
+
       var CommentBox = React.createClass({
         render: function() {
           return (
@@ -26,7 +37,7 @@
 
         <h1>Comments</h1>
         <CommentList />
-        <CommentForm />
+
 
             </div>
           );
