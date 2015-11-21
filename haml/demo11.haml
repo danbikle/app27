@@ -10,11 +10,15 @@
     %script(src="/d3.v3.min.js")
   %body
     %h1    app27/demo11
-    #example yo
+    #example example
     %hr/
-    #jquery_example hi
+    #jquery_example1 jquery_example1 
     %hr/
-    #d3_example d3 yes
+    #jquery_example2 jquery_example2 
+    %hr/
+    #d3_example1 d3_example1
+    %hr/
+    #d3_example2 d3_example2
     %script(type="text/babel")
       ReactDOM.render(
       <h1>React says: Hello, world!</h1>,
@@ -22,12 +26,16 @@
       );
     :javascript
       jQuery(function(){
-        $('#jquery_example').html('');
-        var jmsg = ' hello.';
-        $('<h1/>', {text:'jQuery says: '+jmsg}).appendTo('#jquery_example');
+        var jmsg  = ' hello.';
+        var d3msg = ' hi too.';
 
-        var d3msg  = ' hi too.';
-        d3.select("#d3_example")
+        $('#jquery_example1').text('<h1>jQuery1 says: '+jmsg+'</h1>');
+
+
+        $('#jquery_example2').text('');
+        $('<h1/>', {text:'jQuery2 says: '+jmsg}).appendTo('#jquery_example2');
+
+        d3.select("#d3_example2")
           .text('')
           .append('h1')
           .text('D3.js says: '+d3msg);
