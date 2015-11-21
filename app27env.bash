@@ -3,4 +3,5 @@
 export GEM_HOME=/home/ann/app27/gems
 export PATH=${PATH}:/home/ann/app22/node_modules/.bin
 export PATH=${GEM_HOME}/bin:${PATH}
-export PATH=${HOME}/heroku-client/bin:${PATH}
+export PATH=/home/ann/heroku-client/bin:${PATH}
+export PATH=/home/ann/node/bin:${PATH}
