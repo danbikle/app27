@@ -100,8 +100,7 @@ rm -f  heroku-client
 rm -rf heroku-client.tgz
 wget https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz
 tar zxf heroku-client.tgz
-echo 'export PATH=/home/ann/heroku-client/bin:${PATH}' >> ~ann/.bashrc
-echo  export PATH=/home/ann/heroku-client/bin:${PATH}
+.  ~ann/app27/app27env.bash
 ```
 I created ssh-key for ann account (assuming ann has none yet).
 
@@ -116,8 +115,10 @@ I gave a copy of ann public ssh-key to heroku:
 ``` 
 I used heroku-client to create a blank app named app27 at herokuapp.com
 ```
-cd ~ann/app26r
+cd ~ann/app27
 ~ann/heroku-client/bin/heroku create app27
+~ann/heroku-client/bin/heroku buildpacks:clear
+~ann/heroku-client/bin/heroku buildpacks:add heroku/nodejs
 ``` 
 I git-pushed ~ann/app27 to heroku:
 ```
