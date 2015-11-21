@@ -22,8 +22,10 @@
       );
     :javascript
       jQuery(function(){
+        $('#jquery_example').html('');
         var jmsg = ' hello.';
-        $( "#jquery_example" ).html('<h1>jQuery says: '+jmsg+'</h1>');
+        $('<h1/>', {text:'jQuery says: '+jmsg}).appendTo('#jquery_example');
+
         var d3msg  = ' hi too.';
         d3.select("#d3_example")
           .text('')
