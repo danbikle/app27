@@ -3,16 +3,36 @@
   <head>
     <meta charset='UTF-8'>
     <title>app27/demo12</title>
-    <script src='/build/react.js'></script>
-    <script src='/build/react-dom.js'></script>
-    <script src='/browser.min.js'></script>
-    <script src='/jquery.min.js'></script>
-    <script src='/demo12.js'></script>
+
+    <script src="/build/react.min.js"></script>
+    <script src="/build/react-dom.min.js"></script>
+    <script src="/browser.min.js"></script>
+    <script src="/jquery.min.js"></script>
   </head>
   <body>
     <h1>app27/demo12</h1>
-    <hr>
-    <div id='content'></div>
-    <hr>
+    refer to:
+    <br />
+    <a href='https://facebook.github.io/react/docs/tutorial.html#your-first-component' target='x'>
+      https://facebook.github.io/react/docs/tutorial.html#your-first-component
+    </a>
+    <hr />
+    <div id="content"></div>
+    <hr />
+    <script type="text/babel">
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
+              Hello, world! I am a CommentBox.
+            </div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <CommentBox />,
+        document.getElementById('content')
+      );
+    </script>
   </body>
 </html>
