@@ -10,11 +10,32 @@
   </head>
   <body>
     <h1>app27/demo14</h1>
+    refer to:
+    <br />
+    <a href='https://facebook.github.io/react/docs/tutorial.html#your-first-component' target='x'>
+      https://facebook.github.io/react/docs/tutorial.html#your-first-component
+    </a>
     <hr />
-    <div id="somehting"></div>
+    <div id="content"></div>
     <hr />
     <script type="text/babel">
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
 
+        <h1>Comments</h1>
+        <CommentList />
+        <CommentForm />
+
+            </div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <CommentBox />,
+        document.getElementById('content')
+      );
     </script>
   </body>
 </html>
