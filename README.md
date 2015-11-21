@@ -114,5 +114,22 @@ I gave a copy of ann public ssh-key to heroku:
 ~ann/heroku-client/bin/heroku auth:whoami
 ~ann/heroku-client/bin/heroku keys:add
 ``` 
+I used heroku-client to create a blank app named app27 at herokuapp.com
+```
+cd ~ann/app26r
+~ann/heroku-client/bin/heroku create app27
+``` 
+I git-pushed ~ann/app27 to heroku:
+```
+cd ~ann/app27
+git add .
+git commit -am hello_heroku
+git push heroku master
+``` 
+I saw ~ann/app27 deployed at 
 
+https://app27.herokuapp.com
 
+You have questions?
+
+e-me: bikle101 at gmail
