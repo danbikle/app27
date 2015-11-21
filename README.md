@@ -80,9 +80,37 @@ mkdir -p $GEM_HOME
 $GEM_HOME/bin/bundle install
 npm install
 ~ann/app27/http.bash
+```
 
-In another shell run this:
+In another shell I ran this:
+```
 /usr/bin/curl localhost:8080/demo10.html|head
-
+```
 That command should show me some HTML syntax.
+
+After I installed app27 on my laptop, I deployed it to heroku.
+
+First I used a browser to create an account at www.heroku.com  which cost $0.00
+
+I continued by following these shell commands:
+
+```
+cd ~ann
+wget https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz
+tar zxf heroku-client.tgz
+echo 'export PATH=/home/ann/heroku-client/bin:${PATH}' >> ~ann/.bashrc
+echo  export PATH=/home/ann/heroku-client/bin:${PATH}
+```
+I created ssh-key for ann account (assuming ann has none yet).
+
+I used heroku-client to "login" my shell.
+
+I gave a copy of ann public ssh-key to heroku:
+```
+~ann/heroku-client/bin/heroku status
+~ann/heroku-client/bin/heroku auth:login
+~ann/heroku-client/bin/heroku auth:whoami
+~ann/heroku-client/bin/heroku keys:add
+``` 
+
 
