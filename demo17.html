@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>app27/demo17</title>
+    <script src="/build/react.min.js"></script>
+    <script src="/build/react-dom.min.js"></script>
+    <script src="/browser.min.js"></script>
+    <script src="/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>app27/demo17</h1>
+    refer to:
+    <br />
+
+<a href='https://facebook.github.io/react/docs/tutorial.html#using-props' target='x'>
+https://facebook.github.io/react/docs/tutorial.html#using-props
+</a>
+
+
+    <hr />
+    <div id="content"></div>
+    <hr />
+    <script type="text/babel">
+      var Comment = React.createClass({
+        render: function() {
+          return (
+            <div className="comment">
+              <h2 className="commentAuthor">
+                {this.props.author}
+              </h2>
+              {this.props.children}
+            </div>
+          );
+        }
+      });
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              <Comment author="Pete Hunt">This is one comment</Comment>
+              <Comment author="Jordan Walke">This is *another* comment</Comment>
+            </div>
+          );
+        }
+      });
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              Hello, world! I am a CommentForm.
+            </div>
+          );
+        }
+      });
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
+              <h1>Comments</h1>
+              <CommentList />
+              <hr />
+              <CommentForm />
+            </div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <CommentBox />,
+        document.getElementById('content')
+      );
+    </script>
+  </body>
+</html>
