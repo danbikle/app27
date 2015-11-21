@@ -1,0 +1,19 @@
+!!!
+%html(lang="en")
+  %head
+    %meta(charset="UTF-8")
+    %title app27/demo11
+    %script(src="/build/react.js")
+    %script(src="/build/react-dom.js")
+    %script(src="/browser.min.js")
+  %body
+    %h1    app27/demo11
+    #example
+    %script(type="text/babel")
+      ReactDOM.render: function() {  
+      return <header>
+      { this.state.name ? this.state.name : <span>Not Logged In</span> }
+      </header>,
+      document.getElementById('example')
+      };
+

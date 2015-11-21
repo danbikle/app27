@@ -131,6 +131,12 @@ I saw ~ann/app27 deployed at
 
 https://app27.herokuapp.com
 
+I found the first demo of app27 at this URL:
+
+https://app27.herokuapp.com/demo10.html
+
+The above demo shows how to use ReactJS to say: 'Hello, world!'
+
 You have questions?
 
 e-me: bikle101 at gmail
