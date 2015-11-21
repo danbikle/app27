@@ -11,15 +11,17 @@
   </head>
   <body>
     <h1>app27/demo11</h1>
+    <hr>
     <div id="example">example</div>
     <hr>
     <div id="jquery_example1">jquery_example1</div>
     <hr>
-    <div id="jquery_example2">jquery_example2</div>
-    <hr>
     <div id="d3_example1">d3_example1</div>
     <hr>
+    <div id="jquery_example2">jquery_example2</div>
+    <hr>
     <div id="d3_example2">d3_example2</div>
+    <hr>
     <script type="text/babel">
       ReactDOM.render(
       <h1>React says: Hello, world!</h1>,
@@ -27,21 +29,25 @@
       );
     </script>
     <script>
-      jQuery(function(){
-        var jmsg  = ' hello.';
-        var d3msg = ' hi too.';
+      var jmsg  = ' hello.';
+      var d3msg = ' hi too.';
+      var jmsg1 = '<h1>jQuery1  says: '+jmsg+ '</h1>';
+      var d3msg1= '<h1>D3.js #1 says: '+d3msg+'</h1>';
+      var jmsg2 = 'jQuery2  says: '+jmsg;
+      var d3msg2= 'D3.js #2 says: '+d3msg;
       
-        $('#jquery_example1').text('<h1>jQuery1 says: '+jmsg+'</h1>');
+      jQuery('#jquery_example1').html(jmsg1);
       
+      d3.select('#d3_example1').html(d3msg1);
       
-        $('#jquery_example2').text('');
-        $('<h1/>', {text:'jQuery2 says: '+jmsg}).appendTo('#jquery_example2');
+      jQuery('#jquery_example2')
+        .html('');
+      jQuery('<h1/>', {text:jmsg2}).appendTo('#jquery_example2');
       
-        d3.select("#d3_example2")
-          .text('')
-          .append('h1')
-          .text('D3.js says: '+d3msg);
-      });
+      d3.select('#d3_example2')
+        .html('')
+        .append('h1')
+        .text(d3msg2);
     </script>
   </body>
 </html>
