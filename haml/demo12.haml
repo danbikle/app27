@@ -7,26 +7,10 @@
     %script(src="/build/react-dom.js")
     %script(src="/browser.min.js")
     %script(src="/jquery.min.js")
+    %script(src="/demo12.js")
   %body
     %h1    app27/demo12
     %hr/
     #content
     %hr/
-
-    :javascript
-      // tutorial1.js
-    %script(type="text/babel")
-      var CommentBox = React.createClass({
-      render: function() {
-      return 
-      <div className="commentBox">
-      Hello, world! I am a CommentBox.
-      </div>
-      );
-      }
-      });
-      ReactDOM.render(
-      <CommentBox />,
-      document.getElementById('content')
-      );
-
+  
