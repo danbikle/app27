@@ -19,26 +19,21 @@
     <div id="content"></div>
     <hr />
     <script type="text/babel">
-
-var CommentList = React.createClass({
-  render: function() {
-    return (
-      <div className="commentList">
-        Hello, world! I am a CommentList.
-      </div>
-    );
-  }
-});
-
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              Hello, world! I am a CommentList.
+            </div>
+          );
+        }
+      });
       var CommentBox = React.createClass({
         render: function() {
           return (
             <div className="commentBox">
-
-        <h1>Comments</h1>
-        <CommentList />
-
-
+              <h1>Comments</h1>
+              <CommentList />
             </div>
           );
         }
