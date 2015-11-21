@@ -11,16 +11,19 @@
   <body>
     <h1>app27/demo11</h1>
     <div id="example"></div>
-    <div id="jquery_example"></div>
+    <hr>
+    <div id="jquery_example">hi</div>
     <script type="text/babel">
       ReactDOM.render(
-      <h1>hello</h1>,
+      <h1>React says: Hello, world!</h1>,
       document.getElementById('example')
       );
     </script>
     <script>
-      $("jquery_example").html('jQuery says hi too.');
+      jQuery(function(){
+        var jmsg = ' hello.'
+        $( "#jquery_example" ).html('<h1>jQuery says: '+jmsg+'</h1>');
+      });
     </script>
-    
   </body>
 </html>

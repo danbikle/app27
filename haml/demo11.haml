@@ -6,14 +6,21 @@
     %script(src="/build/react.js")
     %script(src="/build/react-dom.js")
     %script(src="/browser.min.js")
+    %script(src="/jquery.min.js")
   %body
     %h1    app27/demo11
     #example
+    %hr/
+    #jquery_example hi
     %script(type="text/babel")
-      ReactDOM.render: function() {  
-      return <header>
-      { this.state.name ? this.state.name : <span>Not Logged In</span> }
-      </header>,
+      ReactDOM.render(
+      <h1>React says: Hello, world!</h1>,
       document.getElementById('example')
-      };
+      );
+    :javascript
+      jQuery(function(){
+        var jmsg = ' hello.'
+        $( "#jquery_example" ).html('<h1>jQuery says: '+jmsg+'</h1>');
+      });
+  
 
