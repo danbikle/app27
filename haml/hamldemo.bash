@@ -7,6 +7,6 @@
 
 .  ~ann/app27/app27env.bash
 cd ~ann/app27/haml/
-$GEM_HOME/bin/haml -eq demo10.haml ~ann/app27/demo10.html
+$GEM_HOME/bin/haml -eq temp.haml /tmp/temp.html
 
 exit
