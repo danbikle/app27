@@ -82,4 +82,7 @@ npm install
 ~ann/app27/http.bash
 
 In another shell run this:
-/usr/bin/curl localhost:8080|head
+/usr/bin/curl localhost:8080/demo10.html|head
+
+That command should show me some HTML syntax.
+
