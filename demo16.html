@@ -22,6 +22,17 @@ https://facebook.github.io/react/docs/tutorial.html#using-props
     <div id="content"></div>
     <hr />
     <script type="text/babel">
+
+      var Comment = React.createClass({
+        render: function() {
+          return (
+            <div className="comment">
+              hey
+            </div>
+          );
+        }
+      });
+
       var CommentList = React.createClass({
         render: function() {
           return (
@@ -32,6 +43,7 @@ https://facebook.github.io/react/docs/tutorial.html#using-props
           );
         }
       });
+
       var CommentForm = React.createClass({
         render: function() {
           return (
