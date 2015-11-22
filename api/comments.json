@@ -1,4 +1,12 @@
 [
-  {id: 1, author: "Dan Bikle", text: "**Dan was here!**"},
-  {id: 2, author: "Dan Bikle", text: "*This is italic markdown, not Italian.*"}
+    {
+        "id": 1388534400000,
+        "author": "Pete Hunt",
+        "text": "Hey there!"
+    },
+    {
+        "id": 1420070400000,
+        "author": "Paul O’Shannessy",
+        "text": "hello, yes, React is *great*!"
+    }
 ]
