@@ -1,0 +1,4 @@
+[
+  {id: 1, author: "Dan Bikle", text: "**Dan was here!**"},
+  {id: 2, author: "Dan Bikle", text: "*This is italic markdown, not Italian.*"}
+]
