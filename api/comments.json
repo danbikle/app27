@@ -11,7 +11,12 @@
     },
     {
         "id": 1448163676438,
-        "author": "dan",
-        "text": "Dan Dan dan"
+        "author": "Dan",
+        "text": "The unix time is now: 1448163676438 and counting."
+    },
+    {
+        "id": 1448164307753,
+        "author": "Dan Again",
+        "text": "demo22 only runs on my laptop, not heroku (yet)..."
     }
 ]
